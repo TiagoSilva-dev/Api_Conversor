@@ -7,7 +7,7 @@ app.use(cors());
 
 
 app.use(express.json());
-app.get('/conversor/',(req,res)=>{
+app.get('/',(req,res)=>{
   res.json({
     moedas:[
       { key:0 , moeda:'BRL', name:'Brasil Real'},
