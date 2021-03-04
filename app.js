@@ -8,8 +8,7 @@ app.use(cors());
 
 app.use(express.json());
 app.get('/',(req,res)=>{
-  res.json({
-    moedas:[
+  res.json(
       { key:0 , moeda:'BRL', name:'Brasil Real'},
       { key:1 , moeda:'USD', name:'Estados Unidos Dólar'},
       { key:2 , moeda:'EUR', name:'Zona do Euro'},
@@ -17,9 +16,7 @@ app.get('/',(req,res)=>{
       { key:4 , moeda:'AUD', name: 'Austrália Dólar'},
       { key:5 , moeda:'CHF', name: 'Franco Suíço'},
       { key:6 , moeda:'CAD' , name: 'Canadá Dólar '},
-      { key:7 , moeda:'ARS', name: 'Peso Argentino'},
-    ]
-  })
+      { key:7 , moeda:'ARS', name: 'Peso Argentino'} )
 })
 
 app.listen(PORT);
